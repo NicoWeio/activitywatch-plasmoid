@@ -1,0 +1,19 @@
+[Desktop Entry]
+Comment=Most used programs
+Icon=preferences-system-time
+Name=ActivityWatch
+Type=Service
+X-KDE-FormFactors=tablet,handset,desktop
+X-KDE-PluginInfo-Author=Nicolai Weitkemper
+X-KDE-PluginInfo-Category=Date and Time
+X-KDE-PluginInfo-Email=kontakt@nicolaiweitkemper.de
+X-KDE-PluginInfo-EnabledByDefault=true
+X-KDE-PluginInfo-License=GPL-2.0+
+X-KDE-PluginInfo-Name=de.nicolaiweitkemper.activitywatch
+X-KDE-PluginInfo-Version=0.1.0
+X-KDE-PluginInfo-Website=https://github.com/NicoWeio/activitywatch-plasmoid
+X-KDE-ServiceTypes=Plasma/Applet
+X-Plasma-API=declarativeappletscript
+X-Plasma-MainScript=ui/activitywatch.qml
+X-Plasma-Provides=org.kde.plasma.time,org.kde.plasma.date
+X-Plasma-StandAloneApp=true
