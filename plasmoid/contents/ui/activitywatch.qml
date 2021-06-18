@@ -84,8 +84,7 @@ Item {
           "window_events = query_bucket(find_bucket(\"aw-watcher-window_\"));",
           "window_events = filter_period_intersect(window_events, filter_keyvals(afk_events, \"status\", [\"not-afk\"]));",
           "merged_events = merge_events_by_keys(window_events, [\"app\", \"title\"]);",
-          "RETURN = sort_by_duration(merged_events);",
-          ";"
+          "RETURN = sort_by_duration(merged_events);"
         ],
         "timeperiods": [start.toISOString() + '/' + end.toISOString()]
       });
