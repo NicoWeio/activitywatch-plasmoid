@@ -44,7 +44,7 @@ Item {
                       color: "#FFFFFF"
                       font.pointSize: 16
                       font.weight: Font.Light
-                      text: `${name}`
+                      text: name
                     }
                     Text {
                       color: "#FFFFFF"
