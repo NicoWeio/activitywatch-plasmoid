@@ -13,12 +13,26 @@ License: TBD. For now, feel free to hack around an submit PRs.
 
 Some useful commands:
 
-`plasmawindowed activitywatch-plasmoid/plasmoid` (does not work anymore?)
+```shell
+# preview the *local* plasmoid
+# Note: Click and hold to change the plasmoid's size – at least that's the only way it works for me.
+plasmoidviewer -a plasmoid
 
-`kpackagetool5 -t Plasma/Applet --install plasmoid`
-`kpackagetool5 -t Plasma/Applet --upgrade plasmoid`
-`kpackagetool5 -t Plasma/Applet --remove de.nicolaiweitkemper.activitywatch`
+# preview the *installed* plasmoid
+plasmawindowed de.nicolaiweitkemper.activitywatch
+
+
+# install; only works if not present
+kpackagetool5 -t Plasma/Applet --install plasmoid
+
+# otherwise, use
+kpackagetool5 -t Plasma/Applet --upgrade plasmoid
+
+# for uninstalling (untested), use
+kpackagetool5 -t Plasma/Applet --remove de.nicolaiweitkemper.activitywatch
+```
 
 ## Sources
 
 -   <https://techbase.kde.org/Development/Tutorials/Plasma5/QML2/GettingStarted>
+-   <https://zren.github.io/kde/docs/widget/>
