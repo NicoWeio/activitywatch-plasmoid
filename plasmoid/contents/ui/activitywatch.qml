@@ -37,28 +37,33 @@ Item {
         Component {
             id: programComponent
             Item {
-                // width: 0
                 height: 60
                 Column {
                     Text {
                       color: "#FFFFFF"
+                      elide: Text.ElideLeft
                       font.pointSize: 16
                       font.weight: Font.Light
                       text: name
+                      width: representation.width
                     }
                     Text {
                       color: "#FFFFFF"
                       text: `${number}`
                     }
-                    PlasmaComponents.ProgressBar {value: progress }
+                    PlasmaComponents.ProgressBar {
+                      value: progress
+                      width: representation.width
+                    }
                 }
             }
         }
 
         ListView {
             anchors.fill: parent
-            model: dasModel
+            clip: true
             delegate: programComponent
+            model: dasModel
         }
     }
 
